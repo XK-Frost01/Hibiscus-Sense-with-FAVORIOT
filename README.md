@@ -66,55 +66,61 @@ https://espressif.github.io/arduino-esp32/package_esp32_index.json
 <p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_9.png" width="900"><</p>
 
 >  make sure the Adafruit library is by Adafruit and MQTT library is by Joel Gaehwiler
-<br>
+<br><br>
 
-Step 4: Plug in Hibisus Sense
+### Step 4: Plug in Hibisus Sense
 
  * plug in the hibiscus sense to your laptop
-<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_9.png" width="900"><</p>
+
+<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Hibiscus%20Sense%20plug%20in.jpeg" width="900"><</p>
 
  * then, you can go to the Device Manager > Ports (COM & LPT)
- * you can plug in your device to your laptop and search for CP210x driver will connected to which COM
+ * search for CP210x driver will connected to which COM
 
 <p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_13.png" width="900"></p>
 
  * and lastly you can connect to board and the port as below
 
 <p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_14.png" width="900"></p>
+<br><br>
 
-Step 4: Setup Favoriot Platform
+### Step 5: Setup Favoriot Platform
+
  * This project integrate the use if ESP32 sensor with [FAVORIOT platform](https://platform.favoriot.com/login)
  * to open favoriot platform, you can search:
 
 ```URL
 https://platform.favoriot.com/login
 ```
-<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_14.png" width="900"></p>
 
- * then, to start using the favoriot.
- * To learn on how to create a new hierarchy or device you can follow copy the link below
+<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/FAVORIOT_1.png" width="900"></p>
 
-<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_14.png" width="900"></p>
+ * For a beginner-friendly tutorial on getting started with the FAVORIOT platform and creating a device for your project, refer to the link provided below:
+
 ```URL
-https://www.youtube.com/watch?v=V8E6XRoVRUg&list=PLeB7L9fw2CnIrfLRYK42tPN2LJohwfGtu&index=1
-```
-<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_14.png" width="900"></p>
-```URL
-https://www.youtube.com/watch?v=okdeDkr2ps4&list=PLeB7L9fw2CnIrfLRYK42tPN2LJohwfGtu&index=2
-```
-```URL
-https://www.youtube.com/watch?v=YMns-S28X3k&list=PLeB7L9fw2CnIrfLRYK42tPN2LJohwfGtu&index=3
-```
-```URL
-https://www.youtube.com/watch?v=mNw0p_OE6OY&list=PLeB7L9fw2CnIrfLRYK42tPN2LJohwfGtu&index=4
-```
-```URL
-https://www.youtube.com/watch?v=490DgUlIHN8&list=PLeB7L9fw2CnIrfLRYK42tPN2LJohwfGtu&index=5
+https://www.youtube.com/playlist?list=PLeB7L9fw2CnIrfLRYK42tPN2LJohwfGtu
 ```
 
-Step 5: uploading the code inside ESP32
+> You can go through vedio 1 to 5 and decide on how to setup your project in FAVORIOT platform
 
+ * or you can refer to FAVORIOT recources tab:
 
-Step6:  Setup FAVORIOT dashboard       
- * [FAVORIOT TUTORIAL: HIBISCUS SENSE DASHBOARD SETUP (Part 1)](https://youtu.be/JYTBMOHCwtE)
- * [FAVORIOT TUTORIAL: HIBISCUS SENSE DASHBOARD SETUP (Part 2)](https://youtu.be/THDEmfXA9zQ)
+<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/FAVORIOT_2.png" width="900"></p>
+<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/FAVORIOT_3.png" width="900"></p>
+<br><br>
+
+### Step 6: uploading the code inside ESP32
+
+ * You can select the code from the folder above, which contains examples for four protocols: 
+    * HTTPS
+    * MQTTS
+    * CoAP
+    * WebSocket.
+
+<br><br>
+
+### Step 7:  Setup FAVORIOT dashboard   
+
+ * You can display the data received in the FAVORIOT Data Stream on the FAVORIOT Dashboard; for guidance on dashboard setup, refer to the link below.
+    * [FAVORIOT TUTORIAL: HIBISCUS SENSE DASHBOARD SETUP (Part 1)](https://youtu.be/JYTBMOHCwtE)
+    * [FAVORIOT TUTORIAL: HIBISCUS SENSE DASHBOARD SETUP (Part 2)](https://youtu.be/THDEmfXA9zQ)
