@@ -72,7 +72,7 @@ https://espressif.github.io/arduino-esp32/package_esp32_index.json
 
  * plug in the hibiscus sense to your laptop
 
-<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Hibiscus%20Sense%20plug%20in.jpeg" width="900"><</p>
+<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Hibiscus%20Sense%20plug%20in.jpeg" width="900"></p>
 
  * then, you can go to the Device Manager > Ports (COM & LPT)
  * search for CP210x driver will connected to which COM
