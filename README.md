@@ -5,7 +5,7 @@ Exploring data transmission from Arduino-based ESP32 devices to the Favoriot pla
 
 ## Introduction to ESP32
 
-In this project, the ESP32 that will be used is [Hibiscus Sense](https://myduino.com/product/myd-036/). [Hibiscus Sense](https://myduino.com/product/myd-036/) is a versatile Internet of Things (IoT) development board, powered by the mighty and popular dual-core [ESP32](https://www.espressif.com/en/products/socs/esp32) microcontroller. This device is equipped with 3 type of actuator and 3 type of sensor which is:  
+In this project, the ESP32 that will be used is Hibiscus Sense. [Hibiscus Sense](https://myduino.com/product/myd-036/) is a versatile Internet of Things (IoT) development board, powered by the mighty and popular dual-core [ESP32](https://www.espressif.com/en/products/socs/esp32) microcontroller. This device is equipped with 3 type of actuator and 3 type of sensor which is:  
 * 3 sensors:
   * **APDS9960**: an environment sensor, which sense *proximity, RGB* and *gesture*.
   * **BME280**: an environment sensor, which sense the *altitude, barometric pressure, humidity* and *temperature*.
@@ -20,11 +20,11 @@ Hibiscus Sense comes with **USB Type-C** to power up the board and to program th
 
 ## Hibiscus Sense Features
 
-<p align="center"><img src="https://github.com/myduino/Hibiscus-Sense-Arduino/raw/main/references/hibiscus-sense-features.png" width="900"></a></p>
+<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/hibiscus-sense-features.png" width="900"></a></p>
 
 ## Hibiscus Sense Pinout Diagram
 
-<p align="center"><img src="https://github.com/myduino/Hibiscus-Sense-Arduino/raw/main/references/hibiscus-sense-pinout.png" width="900"></a></p>
+<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/hibiscus-sense-pinout.png" width="900"></a></p>
 
 * **Blue LED** is connected to ESP32's **`GPIO2`**.
 * **Small Buzzer** is connected to ESP32's **`GPIO13`**.
@@ -40,20 +40,31 @@ Hibiscus Sense comes with **USB Type-C** to power up the board and to program th
 
 
 ## Project Setup
+
 Step 1: Install Arduino IDE
  * To install Arduino IDE, you can go to [Arduino official website](https://www.arduino.cc/en/software)
+
+```URL
+https://www.arduino.cc/en/software
+```
 
 <p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_1.png" width="900"></p>
 <p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_2.png" width="900"></p>
 <p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_3.png" width="900"></p>
 <p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_5.png" width="900"></p>
 
- * After downloading the Arduino IDE, you need to install universal driver
+Step 2: CP210x unversal driver
+ * After downloading the Arduino IDE, you need to install [universal driver](https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads)
+
+```URL
+https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads
+```
 
 <p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_10.png" width="900"></p>
 <p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_11.png" width="900"></p>
 <p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_12.png" width="900"></p>
 
+Step 3: Library setup
  * After that, you can open Arduino IDE application
 
 <p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_6.png" width="900"></p>
@@ -83,11 +94,51 @@ https://espressif.github.io/arduino-esp32/package_esp32_index.json
     * Adafruit BME280
     * Adafruit APDS9960
     * Adafruit MPU6050
+    * Adafruit NeoPixel
+    * MQTT
 
 <p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_9.png" width="900"><</p>
 
-> make sure all the library is by Adafruit
+> make sure the Adafruit library is by Adafruit
+and MQTT library is by Joel Gaehwiler
 
  * and lastly you can connect to board and the port as below
 
 <p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_14.png" width="900"></p>
+
+Step 4: Setup Favoriot Platform
+ * This project integrate the use if ESP32 sensor with [FAVORIOT platform](https://platform.favoriot.com/login)
+ * to open favoriot platform, you can search:
+
+```URL
+https://platform.favoriot.com/login
+```
+<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_14.png" width="900"></p>
+
+ * then, to start using the favoriot.
+ * To learn on how to create a new hierarchy or device you can follow copy the link below
+
+<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_14.png" width="900"></p>
+```URL
+https://www.youtube.com/watch?v=V8E6XRoVRUg&list=PLeB7L9fw2CnIrfLRYK42tPN2LJohwfGtu&index=1
+```
+<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_14.png" width="900"></p>
+```URL
+https://www.youtube.com/watch?v=okdeDkr2ps4&list=PLeB7L9fw2CnIrfLRYK42tPN2LJohwfGtu&index=2
+```
+```URL
+https://www.youtube.com/watch?v=YMns-S28X3k&list=PLeB7L9fw2CnIrfLRYK42tPN2LJohwfGtu&index=3
+```
+```URL
+https://www.youtube.com/watch?v=mNw0p_OE6OY&list=PLeB7L9fw2CnIrfLRYK42tPN2LJohwfGtu&index=4
+```
+```URL
+https://www.youtube.com/watch?v=490DgUlIHN8&list=PLeB7L9fw2CnIrfLRYK42tPN2LJohwfGtu&index=5
+```
+
+Step 5: uploading the code inside ESP32
+
+
+Step6:  Setup FAVORIOT dashboard       
+ * [FAVORIOT TUTORIAL: HIBISCUS SENSE DASHBOARD SETUP (Part 1)](https://youtu.be/JYTBMOHCwtE)
+ * [FAVORIOT TUTORIAL: HIBISCUS SENSE DASHBOARD SETUP (Part 2)](https://youtu.be/THDEmfXA9zQ)
