@@ -116,7 +116,13 @@ https://www.youtube.com/playlist?list=PLeB7L9fw2CnIrfLRYK42tPN2LJohwfGtu
     * MQTTS
     * CoAP
     * WebSocket.
+ * After copying the code into the Arduino IDE, you can upload it.
 
+<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_16.png" width="900"></p>
+
+ * then you can refer favoriot data stream to see if there is data entering
+
+<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/FAVORIOT_6.png" width="900"></p>
 <br><br>
 
 ### Step 7:  Setup FAVORIOT dashboard   
