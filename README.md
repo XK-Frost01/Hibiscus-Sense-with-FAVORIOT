@@ -101,7 +101,7 @@ https://platform.favoriot.com/login
 https://www.youtube.com/playlist?list=PLeB7L9fw2CnIrfLRYK42tPN2LJohwfGtu
 ```
 
-> You can go through vedio 1 to 5 and decide on how to setup your project in FAVORIOT platform
+> You can go through video 1 to 5 and decide on how to setup your project in FAVORIOT platform
 
  * or you can refer to FAVORIOT recources tab:
 
@@ -111,7 +111,7 @@ https://www.youtube.com/playlist?list=PLeB7L9fw2CnIrfLRYK42tPN2LJohwfGtu
 
 ### Step 6: uploading the code inside ESP32
 
- * You can select the code from the folder above, which contains examples for four protocols: 
+ * After finish creating device inside FAVORIOT platform, you can select the code from the folder above which contains examples for four protocols: 
     * HTTPS
     * MQTTS
     * CoAP
