@@ -1,5 +1,22 @@
 # Hibiscus-Sense-with-FAVORIOT
-Exploring data transmission from Arduino-based ESP32 devices to the Favoriot platform using multiple protocols, including HTTP, MQTT, CoAP, and WebSocket. The focus is on showcasing diverse communication methods for IoT integration with Favoriot.
+This project utilizes the Hibiscus Sense development board to demonstrate IoT data transmission to the FAVORIOT platform using multiple communication protocols, including HTTP, MQTT, CoAP, and WebSocket. The Hibiscus Sense comes equipped with a range of sensors and actuators that make it an ideal choice for showcasing diverse IoT functionalities.
+
+**Sensors Used**:
+  * APDS9960: Captures proximity, RGB light, and gesture data.
+  * BME280: Measures altitude, barometric pressure, humidity, and temperature.
+  * MPU6050: Provides motion tracking with 3-axis gravitational acceleration, 3-axis rotational velocity, and temperature readings.
+
+**Actuators Used**:
+  * Buzzer: Used for sound notifications and alerts.
+  * Blue LED: Offers basic visual feedback.
+  * WS2812 RGB LED: Displays multicolor feedback for visual status indications.
+
+**Project Highlights**:
+  * Sensor data is transmitted to FAVORIOT using multiple protocols, demonstrating the flexibility of IoT communication.
+  * The actuators are controlled via commands sent from the FAVORIOT platform, showcasing bidirectional interaction.
+  * The project highlights how diverse data types from the sensors can be seamlessly integrated into FAVORIOT's ecosystem.
+
+By combining the capabilities of the Hibiscus Sense board with FAVORIOT’s IoT platform, this project emphasizes the practical implementation of IoT communication protocols and real-time data exchange.
 
 <p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/PROJECT%20SETUP.png" width="900"></p>
 <br>
