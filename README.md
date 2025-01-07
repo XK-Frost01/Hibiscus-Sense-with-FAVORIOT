@@ -80,7 +80,7 @@ https://espressif.github.io/arduino-esp32/package_esp32_index.json
     * **Adafruit NeoPixel**
     * **MQTT**
 
-<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_9.png" width="900"><</p>
+<p align="center"><img src="https://github.com/XK-Frost01/Hibiscus-Sense-with-FAVORIOT/blob/main/Reference/Arduino%20IDE_9.png" width="900"></p>
 
 >  make sure the Adafruit library is by Adafruit and MQTT library is by Joel Gaehwiler
 <br><br>
