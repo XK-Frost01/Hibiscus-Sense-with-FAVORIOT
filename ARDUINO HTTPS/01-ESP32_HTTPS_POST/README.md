@@ -1,2 +1,6 @@
-# HTTPS POST with HIBISCUS SENSE
-This project demonstrates how to send sensor data from a Hibiscus Sense (ESP32-based board) to the Favoriot IoT platform using HTTP POST requests. The Hibiscus Sense comes with built-in environmental sensors, making it ideal for IoT data logging.
+# HTTPS 'POST' method
+This project demonstrates how sensor data from the Hibiscus Sense board is transmitted to Favoriot’s data stream using the HTTPS POST method. Key prerequisites for using Favoriot:
+
+1. JSON Format: All data must adhere to Favoriot’s specified JSON structure.
+2. POST Method Format: Follows Favoriot’s API documentation (link to be inserted) for payload formatting.
+3. HTTPS Security: Communication is encrypted (TLS/SSL), with certificates managed by Favoriot.
